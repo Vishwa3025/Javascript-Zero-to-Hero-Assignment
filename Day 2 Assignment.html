@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Javascript Assignment</title>
+</head>
+<body>
+    <script>
+
+        var a=20;
+        var b=10;
+
+        // Binary Operations
+            // Arithmetic Operators
+                console.log("Arithmetic Operators\n");
+                console.log(`\nThe Sum of ${a} and ${b} = ${a+b}`);
+                console.log(`The Difference of ${a} and ${b} = ${a-b}`);
+                console.log(`The Product of ${a} and ${b} = ${a*b}`);
+                console.log(`The Quotient of ${a} and ${b} = ${a/b}`);
+                console.log(`The Remainder of ${a} and ${b} = ${a%b}`);
+
+            // Assignment Operaters
+                console.log("\nAssignment Operators");
+                console.log(`\nThe Sum of ${a} and ${b} = ${a+=b}`);
+                console.log(`The Difference of ${a} and ${b} = ${a-=b}`);
+                console.log(`The Product of ${a} and ${b} = ${a*=b}`);
+                console.log(`The Quotient of ${a} and ${b} = ${a/=b}`);
+                console.log(`The Remainder of ${a} and ${b} = ${a%=b}`);
+
+            // Relational Operators
+                console.log("\nRelational Operators");
+                console.log(`\n${a} > ${b} is ${a>b}`);
+                console.log(`${a} < ${b} is ${a<b}`);
+                console.log(`${a} >= ${b} is ${a>=b}`);
+                console.log(`${a} <= ${b} is ${a<=b}`);
+                console.log(`${a} == ${b} is ${a==b}`);
+                console.log(`${a} != ${b} is ${a!=b}`);
+
+            // Identity Operator
+                console.log("\nIdentity Operator");
+                var c='100';
+                var d=100;
+                console.log(`\nIs string ${c} is equal to integer ${d} : ${c===d}` );
+                console.log(`Is string ${c} is not equal to integer ${d} : ${c!==d}` );
+
+            // Logical Operator
+                console.log("\nLogical Operator");
+                console.log(`\n${a} > ${b} and ${a} < ${b} is ${a>b && a<b} `)
+                console.log(`${a} < ${b} and ${a} != ${b} is ${a<b && a!=b} `)
+                console.log(`${a} > ${b} or ${a} < ${b} is ${a>b || a<b} `)
+                console.log(`${a} > ${b} or ${a} == ${b} is ${a>b || a==b} `)
+                console.log(`not of ${a} == ${b} is ${!(a==b)}`);
+            
+
+                let data=[23,56,45,89,12,14,46,70,92,98];
+                console.log("Even numbers from Array");
+                for(let i = 0; i < data.length; i++)
+                {
+                    if (data[i] % 2 == 0) 
+                    {
+                        console.log(data[i]);                        
+                    }
+                }
+
+                let city=['Tokyo','Berlin','Nairobi','Moscow','Helsinki'];
+                console.log('Original order');
+                for(let i = 0; i<city.length; i++)
+                {
+                    console.log("\t" +"* " +city[i]);             
+                }
+                console.log('Reverse order');
+                for(let i = (city.length)-1; i>=0; i--)
+                {
+                    console.log( "\t" +"* " +city[i] );             
+                }
+                    
+                
+    </script>
+</body>
+</html>
